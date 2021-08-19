@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: relative;
+    top: -5.5rem;
+    margin-bottom: -5.5rem;
+}
+
+.error-banner {
+    @include media-breakpoint-down(lg) {
+        height: 50rem;
+    }
+}
+
+.error-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -5rem;
+
+    a {
+        padding: 1.2rem 3rem;
+        font-size: 0.75rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        top: -2rem;
+    }
+}
