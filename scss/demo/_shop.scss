@@ -48,7 +48,7 @@
 	}
 
 	.product-price {
-		font-size: 1.25	rem;
+		font-size: 1.125rem;
 		font-family: $heading-font;
 		font-weight: 400;
 		line-height: 1;
@@ -66,19 +66,10 @@
 		}
 	}
 
-	.product-categories {
-		margin-top: -0.3rem;
-		a {
-			color: #6a6a6a;
-			font-size: 0.875rem;
-			text-decoration: none;
-		}
-	}
-
 	.product-title {
 		font-weight: 400;
 		margin-bottom: -0.3rem;
-		font-size: 1.75rem;
+		font-size: 1.5625rem;
 
 		a {
 			color: $secondary;
@@ -87,7 +78,7 @@
 	}
 
 	.product-category {
-		font-size: 1.125rem;
+		font-size: 0.875rem;
 		color: #adadad;
 		font-family: $body-font;
 	}
