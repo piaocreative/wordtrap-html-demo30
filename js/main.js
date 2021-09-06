@@ -1,5 +1,22 @@
 $( document ).ready( function() {
 
+    var slider = $('.range-slider'),
+        range = $('#range'),
+        value = $('.slider_val');
+      
+    slider.each(function(){
+  
+      value.each(function(){
+        var value = $(this).prev().attr('value');
+        $(this).html(value);
+      });
+  
+      range.on('input', function(){
+        value.html($(this).val())
+      });
+    });
+  
+
     $('.slick-item').slick({
         dots: false,
         infinite: true,
@@ -42,6 +59,38 @@ $( document ).ready( function() {
     });
 
 } );
+
+$('.products').slick({
+  dots: false,
+  arrows: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
 
 $(".testimonial-slick").slick({
