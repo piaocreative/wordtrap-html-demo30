@@ -50,21 +50,12 @@
 
 	.product-image {
 		position: relative;
+		padding-top: 2rem;
 
 		img {
 			width: 100%;
 			border-top-left-radius:1rem;
 			border-top-right-radius:1rem;
-		}
-
-		> a:nth-of-type(2) {
-			opacity: 0;
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			right: 0;
-			@include transition(all 0.3s ease-in-out);
 		}
 	}
 
@@ -152,12 +143,7 @@
 	}
 
 	&:hover {
-		.product-image {
-			> a:nth-of-type(2) {
-				z-index: 1;
-				opacity: 1;
-			}
-		}
+		background-color: #f7f7f7;
 
 		.add-to-wishlist {
 			background-color: $theme-color;
@@ -319,6 +305,7 @@
 
 					&.rotate {
 						margin-left: -1rem;
+						margin-bottom: 3rem;
 						transform: rotate(270deg);
 					}
 				}

@@ -126,35 +126,14 @@ a {
 			}
 		}
 	}
-}
 
-.sale-banner {
-	position:relative;
-	img {
-		height: 4.5rem;
-	}
-
-	p {
-		color: #4f4f4f;
-		line-height: 1.2rem;
-		font-size: 0.8rem;
-	}
-
-	&.border-right {
-		&:after {
-			position: absolute;
-			right: 5rem;
-			bottom: 0rem;
-			content: "";
-			display: inline-block;
-			width: 1px;
-			height: 4rem;
-			background-color: #d4d4d4;
-		}
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
+	&.product-indicator {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-left: -3rem;
 	}
 }
 
