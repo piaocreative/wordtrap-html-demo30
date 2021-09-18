@@ -10,11 +10,29 @@
 -----------------------------------------------------------------*/
 
 .fbox {
-	position:relative;
+	position: relative;	
+	display: flex;
+	align-items: center;
+
+	@include media-breakpoint-up(lg) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+
+	&:first-child {
+		padding-left: 0;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
 
 	.fbox-icon {
-		img {
-			height: 4.5rem;
+		width: 6.625rem;
+
+		@include media-breakpoint-up(lg) {
+			width: auto;
+			margin-right: 1.875rem;
 		}
 	}
 
@@ -24,24 +42,18 @@
 		font-size: 0.8rem;
 	}
 
-	&.border-right {
-		&:after {
-			position: absolute;
-			right: 5rem;
-			bottom: 0rem;
+	@include media-breakpoint-up(lg) {
+		&:not(:last-child):after {
 			content: "";
-			display: inline-block;
-			width: 1px;
-			height: 4rem;
 			background-color: #d4d4d4;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 50%;				
+			width: 1px;
+			height: 3rem;
 
-			@include media-breakpoint-down(lg) {
-				width: 0;
-			}
+			@include translateY(-50%);
 		}
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
 	}
 }

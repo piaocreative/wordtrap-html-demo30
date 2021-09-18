@@ -36,10 +36,6 @@
 	Sticky Header
 -----------------------------------------------------------------*/
 
-#header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
-}
 
 
 /* ----------------------------------------------------------------
@@ -51,17 +47,13 @@
 }
 
 .navbar-brand {
-	width: 25%;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
 
 	img {
-		width: 25%;
+		width: 5.0625rem;
 		height: auto;
-	}
-
-	@include media-breakpoint-down(lg) {
-		img {
-			width: 50%;
-		}
 	}
 }
 
@@ -78,6 +70,11 @@
 		font-weight: $primary-menu-font-weight;		
 		letter-spacing: $primary-menu-font-spacing;
 		text-transform: $primary-menu-font-tt;
+
+		@include media-breakpoint-up(lg) {
+			padding-left: 1.5625rem;
+			padding-right: 1.5625rem;
+		}
 	}
 
 	.nav-item {
@@ -114,10 +111,14 @@
 
 	.nav-link {
 		color: #4f4f4f;		
+		font-family: $body-font;
 		font-size: 0.875rem;	
 		line-height: 1;
-		border-radius: 50%;
-		font-family: $body-font;
+		padding-left: 1.25rem;
+		padding-right: 0;
+
+		@include border-radius(50%);
+		
 
 		&:hover {
 			color: $primary;

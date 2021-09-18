@@ -4,16 +4,17 @@ $( document ).ready( function() {
         range = $('#range'),
         value = $('.slider_val');
       
-    slider.each(function(){
+    slider.each(function() {
   
-      value.each(function(){
+      value.each(function() {
         var value = $(this).prev().attr('value');
         $(this).html(value);
       });
   
-      range.on('input', function(){
+      range.on('input', function() { 
         value.html($(this).val())
       });
+
     });
 
     if ( $( '.banners' ).length ) {
@@ -22,32 +23,9 @@ $( document ).ready( function() {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
+        slidesToScroll: 1,
         adaptiveHeight: true,
-        arrows:false,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+        arrows:false
       });
 
       $(".banner-next").click(function(e) {
@@ -89,14 +67,7 @@ $( document ).ready( function() {
             }
           },
           {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -115,7 +86,7 @@ $( document ).ready( function() {
         slidesToScroll: 1,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1199,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -123,14 +94,7 @@ $( document ).ready( function() {
             }
           },
           {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -207,6 +171,7 @@ $( document ).ready( function() {
         infinite: true,
         speed: 300,
         slidesToShow: 7,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         arrows:false,
         responsive: [
@@ -214,7 +179,7 @@ $( document ).ready( function() {
             breakpoint: 1024,
             settings: {
               slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToScroll: 1,
               dots: false
             }
           },
@@ -222,14 +187,14 @@ $( document ).ready( function() {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 1
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 1
             }
           }
         ]

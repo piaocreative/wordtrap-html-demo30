@@ -24,41 +24,31 @@ $third-color:                   #2e2e2e;
 $primary:                     $theme-color;
 $secondary:                   #262626;
 $success:                     #f7f7f7;
+$light:                       #f7f7f7;
 $dark:                        black;
 
 
 //-------------------- Font Families --------------------//
 $body-font:                   'Montserrat', sans-serif;
-
 $heading-font:                'Inter', sans-serif;
 
 
 // Font sizes
-$h1-font-size:                	4.375rem;
-$h1-about: 						          5.375rem;
-$h2-font-size:                	3.125rem;
-$h3-font-size:                	2.5rem;
-$h4-font-size:                	1.5625rem;
-$h5-font-size:                	1.125rem;
-$h6-font-size:               	  0.8rem;
+$font-size-base:              0.875rem;
+
+$h1-font-size:                4.375rem;
+$h2-font-size:                3.125rem;
+$h3-font-size:                2.5rem;
+$h4-font-size:                1.5625rem;
+$h5-font-size:                1.125rem;
+$h6-font-size:               	0.875rem;
 
 
-// space//
-$spacer: 1.5rem !default;
+// Line Height
+$line-height-base:            1.642;
+$line-height-sm:              1.25;
+$line-height-lg:              1.8;
 
-$spacers:(
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 3,
-  7: $spacer * 4,
-  8: $spacer * 5,
-) !default;
-
-$grid-gutter-width:             3rem;
 
 // border//
 $border-radius:               1rem;
@@ -187,13 +177,6 @@ $btn-border-width:              1px;
 $btn-border-radius:             0rem;
 $btn-border-radius-sm:          0.5rem;
 $btn-border-radius-lg:          1.83rem;
-
-// line height//
-$line-height-base:            1.5;
-$line-height-sm:              1.25;
-$line-height-lg:              1.8;
-
-
 
 
 //-------------------- Social Icons Colors --------------------//

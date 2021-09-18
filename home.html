@@ -38,7 +38,7 @@
 
         <!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header">
+		<header id="header">
 
             <div id="header-wrap">
 
@@ -48,7 +48,7 @@
 
                         <!-- Logo
                         ============================================= -->
-                        <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
                             <img src="images/logo.png" alt="Saler Logo">
                         </a>
                         
@@ -64,43 +64,35 @@
 
                             <!-- Primary Navigation
                             ============================================= -->
-                            <nav id="primary-menu">
-
-                                <ul class="navbar-nav gap-4">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Cars</a>
-                                    </li>                                  
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Story</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Blog</a>
-                                    </li>                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Contacts</a>
-                                    </li>
-                                </ul>                                
-
-                            </nav><!-- #primary-menu -->
+                            <ul class="navbar-nav ms-auto" id="primary-menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Cars</a>
+                                </li>                                  
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Story</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Blog</a>
+                                </li>                                    
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contacts</a>
+                                </li>
+                            </ul><!-- #primary-menu -->
 
                             <!-- Top Buttons
                             ============================================= -->
-                            <div id="top-btns">
+                            <ul class="navbar-nav flex-row align-items-center ms-auto" id="top-btns">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="fas fa-search me-2"></i>Search</a>
+                                </li>
                                 
-                                <ul class="navbar-nav flex-row gap-2 align-items-center">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="fas fa-search me-2"></i>Search</a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Log In</a>
-                                    </li>
-                                </ul>
-
-                            </div><!-- #top-btns -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Log In</a>
+                                </li>
+                            </ul><!-- #top-btns -->
 
                         </div><!-- Navbar Collapse -->
 
@@ -118,7 +110,7 @@
 
             <div class="content-wrap">
 
-                <!-- banner side
+                <!-- Banner
                 ============================================= -->
                 <section id="banner">
 
@@ -198,7 +190,7 @@
     
                     </div>
 
-                </section><!-- banner side -->
+                </section><!-- Banner -->
 
                 <!-- Products
                 ============================================= -->
@@ -206,94 +198,98 @@
 
                     <div class="container position-relative">
 
-                        <div class="heading-block px-3">
-                            <h2 class="h1 title m-0">Our Cars</h2> 
+                        <div class="heading-block">
+                            <h2 class="h1 title m-0 text-center text-md-start">Our Cars</h2> 
                         </div>
 
-                        <div class="products m-0">
+                        <div class="position-relative">
 
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
+                            <div class="products m-0">
+
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
+                                        <div class="product-category">
+                                            <span>Petrol</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $25 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Petrol</p>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product2.png" alt="Product Image"></a>
                                     </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $25 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">BMW X-6 (2019)</a></h4>
+                                        <div class="product-category">
+                                            <span>Diesel</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $55 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
                                     </div>
                                 </div>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product3.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Tesla Cybertruck</a></h4>
+                                        <div class="product-category">
+                                            <span>Electrocar</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $105 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
+                                        <div class="product-category">
+                                            <span>Petrol</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $25 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
                             </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product2.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">BMW X-6 (2019)</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Diesel</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $55 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
+    
+                            <div class="carousel-indicator product-indicator justify-content-center d-none d-flex gap-2">
+                                <span class="text-dark product-active">01</span>
+                                <span class="text-dark product-total">04</span>
+                                <a href="#" class="text-dark product-next"><i class="fas fa-arrow-right"></i></a>
                             </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product3.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Tesla Cybertruck</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Electrocar</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $105 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Petrol</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $25 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="carousel-indicator product-indicator justify-content-center d-flex gap-2">
-                            <span class="text-dark product-active">01</span>
-                            <span class="text-dark product-total">04</span>
-                            <a href="#" class="text-dark product-next"><i class="fas fa-arrow-right"></i></a>
+                            
                         </div>
 
                     </div>
@@ -308,15 +304,16 @@
 
                         <div class="ads ads1">
                             <div class="ads-bg">
-                                <img src="./images/ads/ads1.png" class="img-full">
-                            </div>
-    
-                            <div class="ads-body d-flex align-items-center">
-                                <div class="col-md-6 col-lg-4 offset-1">
-                                    <h2 class="text-white mb-2 fw-light heading-font">Time to choose<br>your style</h2>
-                                    <p class="mt-4 pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                                    <a href="#" class="btn btn-primary text-dark text-uppercase text-center see-more-link">see more</a>
-                                </div>
+                                <div class="ads-bg-img" style="background-image: url(images/ads/ads1.png);"></div>
+                            </div>    
+                            <div class="ads-body">
+                                <div class="row">
+                                    <div class="col-6 offset-1 col-lg-4">
+                                        <h2 class="text-white mb-3 fw-light lh-1 heading-font">Time to choose your style</h2>
+                                        <p class="text-light pe-4 opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                        <a href="#" class="btn btn-primary text-dark text-uppercase text-center see-more-link">see more</a>
+                                    </div>
+                                </div>                                
                             </div>
                         </div>
 
@@ -324,16 +321,17 @@
 
                 </div><!-- Ads -->
 
-                <!-- sale banner
+                <!-- Features
                 ============================================= -->
                 <div class="section pt-3">
+
                     <div class="container">
-    
-                        <div class="px-0">
-    
-                            <div class="row g-0">
-    
-                                <div class="fbox border-right col-lg-4 d-flex gap-3 justify-content-center align-items-center text-center text-lg-start">
+
+                        <div class="row g-0">
+
+                            <div class="col d-flex flex-column flex-lg-row">
+
+                                <div class="fbox flex-fill mb-3 mb-lg-0">
                                     <div class="fbox-icon">
                                         <img src="./images/fbox2.png" class="img-fluid">
                                     </div>
@@ -343,7 +341,7 @@
                                     </div>
                                 </div>
     
-                                <div class="fbox border-right col-lg-4 d-flex gap-3 justify-content-center align-items-center text-center text-lg-start">
+                                <div class="fbox flex-fill mb-3 mb-lg-0">
                                     <div class="fbox-icon">
                                         <img src="./images/fbox1.png" class="img-fluid">
                                     </div>
@@ -353,7 +351,7 @@
                                     </div>
                                 </div>
     
-                                <div class="fbox col-lg-4 d-flex gap-3 justify-content-center align-items-center text-center text-lg-start">
+                                <div class="fbox flex-fill">
                                     <div class="fbox-icon">
                                         <img src="./images/fbox3.png" class="img-fluid">
                                     </div>
@@ -362,14 +360,14 @@
                                         <p class="m-0 pe-lg-8"> Lorem ipsum dolor sit amet, consectetur</p>
                                     </div>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
     
                     </div>
                     
-                </div><!-- Sale banner -->
+                </div><!-- Features -->
 
                 <!-- Choose car
                 ============================================= -->
@@ -377,123 +375,139 @@
                     
                     <div class="container position-relative">
                         
-                        <div class="heading-block px-3 d-flex justify-content-between align-items-center">
-                            <h2 class="h1 title m-0">Choose your car</h2> 
-                            <a href="#" class="attach-link text-uppercase">See all cars</a>
+                        <div class="heading-block d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <h2 class="h1 title m-0 text-center text-md-start">Choose your car</h2> 
+                            <a href="#" class="attach-link text-uppercase text-center text-md-end">See all cars</a>
                         </div>
 
-                        <div class="row m-0 bg-secondary p-3">
+                        <div class="row">
 
-                            <div class="col-lg-3">
-                                <select type="text" class="form-select text-white border-0 border-bottom" id="contactName" placeholder="Name">
-                                    <option>Brand</option>
-                                </select>
+                            <div class="col">
+
+                                <form class="bg-secondary" id="filter_form">
+
+                                    <div class="row">
+
+                                        <div class="col-lg-3 pb-3 pb-lg-0">
+                                            <select type="text" class="form-select text-white border-0 border-bottom" id="contactName" placeholder="Name">
+                                                <option>Brand</option>
+                                            </select>
+                                        </div>
+    
+                                        <div class="col-lg-3 pb-3 pb-lg-0">
+                                            <select type="text" class="form-select text-white border-0 border-bottom" id="contactName" placeholder="Name">
+                                                <option>Year</option>
+                                            </select>
+                                        </div>
+    
+                                        <div class="col-lg-3 pb-3 pb-lg-0 range-slider">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="text-white heading-font fw-lighter mt-1 mb-0">$0</h5>
+                                                <h5 class="text-white heading-font fw-lighter mt-1 mb-0">$<span class="slider_val">110 000<span></h5>
+                                            </div>
+                                            <input id="range" type="range" class="form-range" value="110000" min="100000" max="500000"/>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 text-center">
+                                            <a class="btn btn-primary see-more-link text-secondary">see more</a>
+                                        </div>
+    
+                                    </div>
+
+                                </form>                                
+
                             </div>
 
-                            <div class="col-lg-3">
-                                <select type="text" class="form-select text-white border-0 border-bottom" id="contactName" placeholder="Name">
-                                    <option>Year</option>
-                                </select>
+                        </div>                                
+
+                        <div class="position-relative">
+
+                            <div class="products mt-lg-6">
+
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
+                                        <div class="product-category">
+                                            <span>Petrol</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $25 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product4.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">BMW X-6 (2019)</a></h4>
+                                        <div class="product-category">
+                                            <span>Diesel</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $55 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product3.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Tesla Cybertruck</a></h4>
+                                        <div class="product-category">
+                                            <span>Electrocar</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $105 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="product">           
+                                    <div class="product-image">
+                                        <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
+                                    </div>
+                                    <div class="product-details text-center text-lg-start">
+                                        <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
+                                        <div class="product-category">
+                                            <span>Petrol</span>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="m-0">From $25 000</p>
+                                        </div>
+                                        <div class="product-btns mt-3 text-center">
+                                            <a class="btn btn-secondary text-uppercase w-100">configuration</a>
+                                            <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="carousel-indicator product-indicator justify-content-center d-none d-md-flex gap-2 mt-7">
+                                <span class="text-dark product-active">01</span>
+                                <span class="text-dark product-total">04</span>
+                                <a href="#" class="text-dark product-next"><i class="fas fa-arrow-right"></i></a>
                             </div>
 
-                            <div class="col-lg-3 range-slider">
-                                <div class="d-flex gap-4">
-                                    <h5 class="text-white heading-font fw-lighter mt-1 mb-0">$21 000</h5>
-                                    <h5 class="text-white heading-font fw-lighter mt-1 mb-0">$<span class="slider_val">110 000<span></h5>
-                                </div>
-                                <input id="range" type="range" class="form-range" value="110000" min="100000" max="500000"/>
-                            </div>
-                            
-                            <div class="col-lg-3">
-                                <a class="btn btn-primary see-more-link text-secondary">see more</a>
-                            </div>
-
-                        </div>
-                        
-                        <div class="products mt-lg-6">
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Petrol</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $25 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product4.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">BMW X-6 (2019)</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Diesel</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $55 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product3.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Tesla Cybertruck</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Electrocar</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $105 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product">           
-                                <div class="product-image">
-                                    <a href="#" class="d-block text-center"><img src="images/shop/product1.png" alt="Product Image"></a>
-                                </div>
-                                <div class="product-details text-center text-lg-start">
-                                    <h4 class="product-title heading-font"><a href="#">Mazda CX-5</a></h4>
-                                    <div class="product-category">
-                                        <p class="mb-1">Petrol</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p class="m-0">From $25 000</p>
-                                    </div>
-                                    <div class="product-btns mt-3 text-center">
-                                        <a class="btn btn-secondary text-uppercase w-100">configuration</a>
-                                        <a href="#" class="see-more text-secondary fw-bold d-block my-3 text-uppercase">see more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="carousel-indicator product-indicator justify-content-center d-flex gap-2 mt-7">
-                            <span class="text-dark product-active">01</span>
-                            <span class="text-dark product-total">04</span>
-                            <a href="#" class="text-dark product-next"><i class="fas fa-arrow-right"></i></a>
                         </div>
 
                     </div>
@@ -504,19 +518,14 @@
                 ============================================= -->
                 <div class="section pt-0">
 
-                    <div class="ads ads1">
+                    <div class="ads ads2">
                         <div class="ads-bg">
-                            <img src="./images/ads/ads2.png" class="img-full" style="height: 30rem;">
+                            <div class="ads-bg-img" style="background-image: url(images/ads/ads2.png);"></div>
                         </div>
-
-                        <div class="ads-body d-flex align-items-center justify-content-center">
-                            <div class="col-lg-4 text-center">
-                                <h2 class="h1 text-white mb-2 fw-light heading-font lh-1 px-4">Premium brand for everyone</h2>
-                                <div class="col-lg-6 m-auto">
-                                    <p class="mt-3 text-white fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                                    <a href="#" class="btn btn-light text-dark text-uppercase text-center fw-semi-bold">choose my car</a>
-                                </div>
-                            </div>
+                        <div class="ads-body text-center">
+                            <h2 class="h1 text-white mb-2 fw-light heading-font lh-1 px-4">Premium brand<br>for everyone</h2>
+                            <p class="mt-3 text-white fw-light">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit, sed do</p>
+                            <a href="#" class="btn btn-light text-dark text-uppercase text-center fw-semi-bold">choose my car</a>
                         </div>
                     </div>
 
@@ -524,48 +533,52 @@
 
                 <!-- About us
                 ============================================= -->
-                <div class="section bg-success py-lg-8">
+                <div class="section bg-success">
 
                     <div class="container">
 
-                        <div class="heading-block px-3">
-                            <h2 class="h1 title m-0">About Us</h2> 
+                        <div class="heading-block">
+                            <h2 class="h1 title m-0 text-center text-md-start">About Us</h2> 
                         </div>
                         
-                        <div class="row m-0 about-top">
+                        <div class="row mb-4">
 
                             <div class="col-lg-5">
                                 <h3 class="heading-font fw-light">The beginning of <br> the era of mechanical engineering</h3>
                             </div>
                             
                             <div class="col-lg-4">
-                                <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                             </div>
 
                             <div class="col-lg-3">
-                                <p class="fs-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
                             </div>
 
-                            <div class="col-12 mt-3">
+                            <div class="col-12">
                                 <img src="./images/about/about7.png" class="img-fluid w-100">
                             </div>
 
-                            <div class="col-lg-5 mt-6">
+                        </div>
+
+                        <div class="row pt-5">
+
+                            <div class="col-lg-4 mt-6">
                                 <h3 class="heading-font fw-light pe-6">Further development of the automotive industry</h3>
                                 <div class="col-lg-9">
-                                    <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <p class="fs-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <p class="fs-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
                                 </div>
                                 <a href="#" class="btn btn-secondary text-uppercase about-us-link">about us</a>
                             </div>
                             
-                            <div class="col-lg-5 offset-xl-1 position-relative mt-lg-6">
-                                <img src="./images/about/about8.png" class="img-fluid">
-                                <p class="fs-6 ps-lg-8 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <div class="col-lg-6 offset-lg-1 position-relative pt-5 pt-lg-0">
+                                <img src="./images/about/about8.png" class="img-fluid w-100">
+                                <p class="pt-3 attach-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                                 <div class="col-lg-6 attach-img">
-                                    <img src="./images/about/about9.png" class="img-fluid">
-                                    <p class="fs-6 px-3 mt-2">Lorem ipsum dolor sit amet</p>
+                                    <img src="./images/about/about9.png" class="img-fluid w-100">
+                                    <p class="px-lg-3 pt-3">Lorem ipsum dolor sit amet</p>
                                 </div>
                             </div>
 
@@ -581,15 +594,14 @@
 
                     <div class="container">
 
-                        <div class="row m-0">
+                        <div class="row">
                             
                             <div class="col-lg-6">
 
                                 <div class="ads ads1">
                                     <div class="ads-bg">
-                                        <img src="./images/ads/ads3.png" class="img-full">
-                                    </div>
-            
+                                        <div class="ads-bg-img" style="background-image: url(images/ads/ads3.png);"></div>
+                                    </div>            
                                     <div class="ads-body d-flex offset-1 align-items-center">
                                         <div class="col-lg-5">
                                             <h4 class="heading-font fw-normal mb-1">Big Sale</h4>
@@ -608,9 +620,8 @@
 
                                 <div class="ads ads1">
                                     <div class="ads-bg">
-                                        <img src="./images/ads/ads4.png" class="img-full">
-                                    </div>
-            
+                                        <div class="ads-bg-img" style="background-image: url(images/ads/ads4.png);"></div>
+                                    </div>            
                                     <div class="ads-body d-flex offset-1 align-items-center">
                                         <div class="col-lg-4">
                                             <h4 class="heading-font fw-normal mb-1">Classis repair</h4>
@@ -634,27 +645,34 @@
                 <!-- logos
                 ============================================= -->
                 <div class="section pt-0 pb-7">
+
                     <div class="container">
+
+                        <div class="heading-block">
+                            <h2 class="h1 title m-0 text-center text-md-start">Our partners</h2> 
+                        </div>
     
-                        <div class="row m-0">
+                        <div class="row">
         
-                            <div class="heading-block px-3">
-                                <h2 class="h1 title m-0">Our partners</h2> 
-                            </div>
+                            <div class="col">
         
-                            <div class="logos col-12">
-                                <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                                <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
+                                <div class="logos">
+                                    <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
+                                </div>
+
                             </div>
+
                         </div>
     
                     </div>
+                    
                 </div><!-- logos -->
 
                 <!-- Posts
@@ -663,62 +681,62 @@
 
                     <div class="container">
 
-                        <div class="heading-block px-3 d-flex justify-content-between align-items-center">
-                            <h2 class="h1 title text-white m-0">News</h2> 
-                            <a href="#" class="attach-link text-white text-uppercase">See all news</a>
+                        <div class="heading-block d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                            <h2 class="h1 title text-white m-0 text-center text-md-start">News</h2> 
+                            <a href="#" class="attach-link text-white text-uppercase text-center text-md-end">See all news</a>
                         </div>
-                        
-                        <div class="posts-slick m-0">
 
-                            <div class="col-lg-6">
+                        <div class="row">
 
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <img src="./images/posts/post1.png" class="img-fluid" alt="Posts">
+                            <div class="col">
+
+                                <div class="posts-slick m-0">
+
+                                    <div>        
+                                        <article class="post">
+                                            <div class="post-thumbnail">
+                                                <img src="./images/posts/post1.png" class="img-fluid" alt="Posts">
+                                            </div>
+                                            <div class="post-content mt-4">
+                                                <h3 class="entry-title text-white">10 cheap foreign cars that Russians would like. Fotos</h3>
+                                            </div>
+                                        </article>        
                                     </div>
-                                    <div class="post-content mt-4">
-                                        <h3 class="entry-title text-white">10 cheap foreign cars that Russians would like. Fotos</h3>
+        
+                                    <div>        
+                                        <article class="post">
+                                            <div class="post-thumbnail">
+                                                <img src="./images/posts/post2.png" class="img-fluid" alt="Posts">
+                                            </div>
+                                            <div class="post-content mt-4">
+                                                <h3 class="entry-title text-white">Renault called the Russian prices for the new Duster</h3>
+                                            </div>
+                                        </article>        
                                     </div>
-                                </article>
-
-                            </div>
-
-                            <div class="col-lg-6">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <img src="./images/posts/post2.png" class="img-fluid" alt="Posts">
+        
+                                    <div>        
+                                        <article class="post">
+                                            <div class="post-thumbnail">
+                                                <img src="./images/posts/post1.png" class="img-fluid" alt="Posts">
+                                            </div>
+                                            <div class="post-content mt-3">
+                                                <h3 class="entry-title text-white">10 cheap foreign cars that Russians would like. Fotos</h3>
+                                            </div>
+                                        </article>        
                                     </div>
-                                    <div class="post-content mt-4">
-                                        <h3 class="entry-title text-white">Renault called the Russian prices for the new Duster</h3>
+        
+                                    <div>        
+                                        <article class="post">
+                                            <div class="post-thumbnail">
+                                                <img src="./images/posts/post2.png" class="img-fluid" alt="Posts">
+                                            </div>
+                                            <div class="post-content mt-3">
+                                                <h3 class="entry-title text-white">Renault called the Russian prices for the new Duster</h3>
+                                            </div>
+                                        </article>        
                                     </div>
-                                </article>
-
-                            </div>
-
-                            <div class="col-lg-6">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <img src="./images/posts/post1.png" class="img-fluid" alt="Posts">
-                                    </div>
-                                    <div class="post-content mt-3">
-                                        <h3 class="entry-title text-white">10 cheap foreign cars that Russians would like. Fotos</h3>
-                                    </div>
-                                </article>
-
-                            </div>
-
-                            <div class="col-lg-6">
-
-                                <article class="post">
-                                    <div class="post-thumbnail">
-                                        <img src="./images/posts/post2.png" class="img-fluid" alt="Posts">
-                                    </div>
-                                    <div class="post-content mt-3">
-                                        <h3 class="entry-title text-white">Renault called the Russian prices for the new Duster</h3>
-                                    </div>
-                                </article>
+        
+                                </div>
 
                             </div>
 
@@ -742,12 +760,12 @@
             ============================================= -->
             <div id="footer-top">
 
-                <div class="row m-0 g-0">
+                <div class="row">
 
                     <div class="col-lg-5">
 
                         <div class="widget widget-subscribe">
-                            <div class="widget-content text-center text-lg-end">
+                            <div class="widget-content text-center text-lg-start">
                                 <h3 class="text-white mb-1 heading-font fw-lighter">Newsletter</h3>
                                 <p>Get all the latest information on Events, Sales and Offers.</p>
                             </div>                                    

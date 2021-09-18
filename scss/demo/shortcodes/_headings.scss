@@ -28,26 +28,27 @@
 		font-family: $heading-font;
 		font-weight: 200;
 
-		&:before {
-			background-color: $secondary;
-			content: "";
-			display: inline-block;
-			height: 0.15rem;
-			position: relative;
-			vertical-align: middle;
-			width: 5rem;
-			margin-left: 1rem;
-			margin-right: 1rem;
-		}
-
-		@include media-breakpoint-down(lg) {
-			font-size: 1.875rem;
-
-			&:before {
-				width: 2rem;
+		@include media-breakpoint-up(md) {
+			&::before {
+				background-color: $secondary;
+				content: "";
+				display: inline-block;
+				height: 0.15rem;
+				position: relative;
+				vertical-align: middle;
+				width: 5rem;			
+				margin-right: 1.25rem;
 			}
 		}
-	}
+
+		&.text-white {
+			@include media-breakpoint-up(md) {
+				&::before {
+					background-color: $white;
+				}
+			}
+		}
+	}	
 
 	.sub-title {
 		font-size: 1.325rem;
