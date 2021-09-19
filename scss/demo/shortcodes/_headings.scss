@@ -32,10 +32,10 @@
 			&::before {
 				background-color: $secondary;
 				content: "";
-				display: inline-block;
-				height: 0.15rem;
+				display: inline-block;				
 				position: relative;
 				vertical-align: middle;
+				height: 2px;
 				width: 5rem;			
 				margin-right: 1.25rem;
 			}

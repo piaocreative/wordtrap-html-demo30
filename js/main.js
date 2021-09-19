@@ -54,14 +54,15 @@ $( document ).ready( function() {
     if ( $( '.posts-slick' ).length ) {
       $('.posts-slick').slick({
         dots: false,
-        arrows: true,
+        arrows: false,
         speed: 300,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 991,
             settings: {
+              arrows: false,
               slidesToShow: 2,
               slidesToScroll: 1,
             }
@@ -69,6 +70,7 @@ $( document ).ready( function() {
           {
             breakpoint: 767,
             settings: {
+              arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -164,6 +166,28 @@ $( document ).ready( function() {
         ]
       });
     }
+
+    if ( $( '.timeline .events' ).length ) {
+      $( '.timeline .events' ).slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: true,
+          prevArrow: $('.heading-arrow .prev-arrow'),
+          nextArrow: $('.heading-arrow .next-arrow'),
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
+      });
+    }
     
     if ( $( '.logos' ).length ) {
       $('.logos').slick({
@@ -184,16 +208,9 @@ $( document ).ready( function() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           }

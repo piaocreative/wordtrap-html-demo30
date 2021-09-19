@@ -80,6 +80,10 @@ body {
 	font-family: $body-font;
 }
 
+#content {
+	position: relative;
+}
+
 iframe { border: none !important; }
 
 

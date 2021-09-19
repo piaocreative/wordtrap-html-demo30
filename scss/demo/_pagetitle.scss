@@ -16,71 +16,57 @@
 -----------------------------------------------------------------*/
 
 #page-title {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	right: 0;
-	left: 0;
-
 	.title {
+		color: $secondary;
 		font-family: $heading-font;
-		font-weight: 300;
-		line-height: 5rem;
-	}
+		font-weight: 200;
+		line-height: 1;		
 
-	.sub-title {
-		font-weight: 300;
-		font-size: 0.875rem;
-		color: #a1a1a1;
-		font-family: $body-font;
-
-		div {
-			&:nth-child(1) {
-				&:after {
-					background-color: #a1a1a1;
-					content: "";
-					display: inline-block;
-					height: 1px;
-					position: relative;
-					vertical-align: middle;
-					width: 2rem;
-					margin-left: 1rem;
-				}
+		@include media-breakpoint-up(md) {
+			&::before {
+				background-color: $secondary;
+				content: "";
+				display: inline-block;				
+				position: relative;
+				vertical-align: middle;
+				height: 2px;
+				width: 5rem;			
+				margin-right: 1.25rem;
 			}
 		}
-
-	}
-
-	p {
-		font-size: 0.875rem;
-		line-height: 1.5rem;
-		font-weight: 300;
-		color: white;
-	}
-
-	.see-more-link {
-		text-decoration: none;
-		background-color: $secondary;
-		text-transform: uppercase;
-		font-size: .7rem;
-		color: #fff;
-		padding: 1.2rem 2.5rem;
-		font-weight: 600;
-		font-family: $body-font;
-		letter-spacing: 0.05rem;
 	}
 }
 
-.breadcrumb {
+.breadcrumb {	
 	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
+	font-size: 0.875rem;
+	padding: 3.125rem 0;
+	margin: 0;
 
-	li {
-		padding: 0 0.625rem;
+	li {		
+		&:not(:last-child) {
+			padding-right: 2.75rem;
+			position: relative;
+
+			&::after {
+				content: "";
+				background-color: $dark;
+				display: block;
+				width: 1.875rem;
+				height: 1px;
+				position: absolute;
+				right: 0.4375rem;
+				top: 50%;				
+			}
+		}
+
+		a {
+			color: $dark;
+			text-decoration: none;
+		}
 
 		&.active {
-			color: #ddcef5;
+			font-weight: 500;
 		}
 
 		&:first-child {
